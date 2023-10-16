@@ -1,32 +1,33 @@
 package Bank;
 
-public class Payment {
+public class Payment
+{
     private String date;
     private Double amount;
     private String description;
     private double incomingInterest;
     private double outgoingInterest;
 
-    public Payment(String date, double amount, String description) {
-        this.date = date;
-        this.amount = amount;
-        this.description = description;
+
+    public Payment(String date, double amount, String description)
+    {
+        setDate(date);
+        setAmount(amount);
+        setDescription(description);
     }
 
     public Payment(String date, double amount, String description, double incomingInterest, double outgoingInterest) {
         this(date, amount, description);
-        this.incomingInterest = incomingInterest;
-        this.outgoingInterest = outgoingInterest;
+        setIncomingInterest(incomingInterest);
+        setOutgoingInterest(outgoingInterest);
     }
 
+    //copy
     public Payment(Payment copy) {
-        this.date = copy.date;
-        this.amount = copy.amount;
-        this.description = copy.description;
-        this.incomingInterest = copy.incomingInterest;
-        this.outgoingInterest = copy.outgoingInterest;
+        this(copy.getDate(), copy.getAmount(), copy.getDescription(), copy.getIncomingInterest(), copy.getOutgoingInterest());
     }
 
+    //getter/setter
     public String getDate() {return date;}
     public void setDate(String d) {date = d;}
 
@@ -46,15 +47,20 @@ public class Payment {
     }
 
     public double getOutgoingInterest() {return outgoingInterest;}
-    public void setOutgoingInterest(double outgoingInterest) {
-        if (outgoingInterest >= 0 && outgoingInterest <= 1) {
+    public void setOutgoingInterest(double outgoingInterest)
+    {
+        if (outgoingInterest >= 0 && outgoingInterest <= 1)
+        {
             this.outgoingInterest = outgoingInterest;
-        } else {
+        }
+        else
+        {
             System.out.println("Ungültiger Ausgangszinssatz");
         }
     }
 
-    public void printObject() {
+    public void printObject()
+    {
         System.out.println("Date: " + date);
         System.out.println("Amount: " + amount);
         System.out.println("Description: " + description);
