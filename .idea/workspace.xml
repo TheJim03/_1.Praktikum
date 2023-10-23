@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889711c8-5adb-4fba-8be8-b83c6e7b0159" name="Changes" comment="First edit" />
+    <list default="true" id="889711c8-5adb-4fba-8be8-b83c6e7b0159" name="Changes" comment="finish">
+      <change afterPath="$PROJECT_DIR$/src/Bank/CalculateBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bank/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank/Transfer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,6 +85,7 @@
       <workItem from="1697204977805" duration="2021000" />
       <workItem from="1697284999672" duration="143000" />
       <workItem from="1697285409621" duration="232000" />
+      <workItem from="1698060285730" duration="2532000" />
     </task>
     <task id="LOCAL-00001" summary="First edit">
       <option name="closed" value="true" />
@@ -106,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First edit" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
 </project>

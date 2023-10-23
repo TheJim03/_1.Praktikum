@@ -1,19 +1,14 @@
 package Bank;
 
-public class Payment
+public class Payment extends Transaction
 {
-    private String date;
-    private Double amount;
-    private String description;
     private double incomingInterest;
     private double outgoingInterest;
 
 
     public Payment(String date, double amount, String description)
     {
-        setDate(date);
-        setAmount(amount);
-        setDescription(description);
+        super(date, amount, description);
     }
 
     public Payment(String date, double amount, String description, double incomingInterest, double outgoingInterest) {
@@ -28,14 +23,6 @@ public class Payment
     }
 
     //getter/setter
-    public String getDate() {return date;}
-    public void setDate(String d) {date = d;}
-
-    public Double getAmount() {return amount;}
-    public void setAmount(Double a) {amount = a;}
-
-    public String getDescription() {return description;}
-    public void setDescription(String d) {description = d;}
 
     public double getIncomingInterest() {return incomingInterest;}
     public void setIncomingInterest(double incomingInterest) {
@@ -61,9 +48,9 @@ public class Payment
 
     public void printObject()
     {
-        System.out.println("Date: " + date);
-        System.out.println("Amount: " + amount);
-        System.out.println("Description: " + description);
+        System.out.println("Date: " + getDate());
+        System.out.println("Amount: " + getAmount());
+        System.out.println("Description: " + getDescription());
         System.out.println("Incoming Interest: " + incomingInterest);
         System.out.println("Outgoing Interest: " + outgoingInterest);
     }
