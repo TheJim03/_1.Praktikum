@@ -1,5 +1,6 @@
 package Bank;
 
-public interface CalculateBill {
-
+public interface CalculateBill
+{
+     public double calculate();
 }
