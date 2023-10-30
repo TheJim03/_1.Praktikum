@@ -3,13 +3,6 @@ import Bank.*;
 public class Main {
     public static void main(String[] args) {
 
-        /**
-         * Erzeugen Sie Objekte der Klassen Payment und Transfer und verwenden Sie dabei alle zur Verfügung
-         * stehenden Konstruktoren (inkl. Copy-Konstruktor). Erzeugen Sie insb. auch Payment-Objekte für
-         * sowohl Ein- als auch Auszahlungen
-         */
-
-
         Payment payment1 = new Payment("01.01.2021", 100, "Gehalt");
         Payment payment2 = new Payment("02.01.2021", -50, "Miete");
         Payment payment3 = new Payment(payment1);
@@ -23,12 +16,6 @@ public class Main {
         Transfer transfer5 = new Transfer("08.01.2021", -50, "Miete", "Moritz", "Max");
         Transfer transfer6 = new Transfer(transfer4);
 
-        /**
-         * Testen Sie nun mit Hilfe der calculate()-Methode, ob die Berechnungen für Payment- und Transfer-
-         * Objekte korrekt funktionieren. Geben Sie hierfür die Werte auf der Konsole aus.
-         * Abschließend sollten auch die in Aufgabe 1 implementierten equals- und toString()-Methoden getestet
-         * werden
-         */
 
         System.out.println(payment1.calculate());
         System.out.println(payment2.calculate());

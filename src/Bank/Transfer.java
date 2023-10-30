@@ -1,91 +1,115 @@
 package Bank;
 
 /**
- * Die Klasse Transfer soll die Klasse Payment erweitern. Sie soll die Attribute sender und recipient
- * enthalten. Die Klasse soll einen Konstruktor mit den Parametern date, amount, description, sender und
- * recipient besitzen. Die Klasse soll einen Copy-Konstruktor besitzen. Die Klasse soll die Methoden
- * getSender() und getRecipient() besitzen. Die Klasse soll die Methoden setSender() und setRecipient()
- * besitzen. Die Klasse soll die Methode toString() überschreiben. Die Klasse soll die Methode equals()
- * überschreiben.
- * Die Klasse soll die Methode calculate() überschreiben. Die Methode soll den Betrag des Transfers
- * zurückgeben.
- * Die Klasse soll die Methode setAmount() überschreiben. Die Methode soll den Betrag des Transfers
- * setzen. Der Betrag darf nicht negativ sein.
+ * Die Klasse Transfer erbt Eigenschaften von Transaction und fügt zusätzliche Parameter für den Sender und den Empfänger hinzu.
  */
-public class Transfer extends Transaction
-{
-    /**
-     * Die Klasse soll die Attribute sender und recipient enthalten.
-     */
+public class Transfer extends Transaction {
     private String sender;
     private String recipient;
 
     /**
-     * Die Klasse soll einen Konstruktor mit den Parametern date, amount, description, sender und
-     * recipient besitzen.
+     * Erstellt ein Transfer-Objekt mit den angegebenen Parametern, die von der Oberklasse Transaction übernommen werden.
+     *
+     * @param date Das Datum der Transaktion.
+     * @param amount Der Betrag der Transaktion.
+     * @param description Eine Beschreibung der Transaktion.
+     * @param sender Der Sender der Überweisung.
+     * @param recipient Der Empfänger der Überweisung.
      */
-    public Transfer(String date, double amount, String description, String sender, String recipient)
-    {
+    public Transfer(String date, double amount, String description, String sender, String recipient) {
         super(date, amount, description);
         setSender(sender);
         setRecipient(recipient);
     }
 
     /**
-     * Die Klasse soll einen Copy-Konstruktor besitzen.
+     * Erstellt eine Kopie des Transfer-Objekts.
+     *
+     * @param copy Das zu kopierende Transfer-Objekt.
      */
-    public Transfer(Transfer copy)
-    {
+    public Transfer(Transfer copy) {
         this(copy.getDate(), copy.getAmount(), copy.getDescription(), copy.getSender(), copy.getRecipient());
     }
 
     /**
-     * Die Klasse soll die Methoden getSender() und getRecipient() besitzen.
-     * setAmound() überschreiben. Die Methode soll den Betrag des Transfers setzen. Der Betrag darf nicht negativ sein.
+     * Setzt den Betrag der Überweisung. Falls der Betrag negativ ist, wird eine Meldung ausgegeben.
+     *
+     * @param a Der zu setzende Betrag der Überweisung.
      */
-   public void setAmount(Double a)
-    {
-        if(a <= 0) System.out.println("Negative Transfer?");
-        else super.setAmount(a);
+    public void setAmount(Double a) {
+        if (a <= 0) {
+            System.out.println("Negative Überweisung?");
+        } else {
+            super.setAmount(a);
+        }
     }
 
-    String getSender() {return sender;}
-    void setSender(String s) {sender = s;}
+    /**
+     * Gibt den Sender der Überweisung zurück.
+     *
+     * @return Der Sender der Überweisung.
+     */
+    String getSender() {
+        return sender;
+    }
 
-    String getRecipient() {return recipient;}
-    void setRecipient(String r) {recipient = r;}
+    /**
+     * Setzt den Sender der Überweisung.
+     *
+     * @param s Der zu setzende Sender der Überweisung.
+     */
+    void setSender(String s) {
+        sender = s;
+    }
 
+    /**
+     * Gibt den Empfänger der Überweisung zurück.
+     *
+     * @return Der Empfänger der Überweisung.
+     */
+    String getRecipient() {
+        return recipient;
+    }
 
+    /**
+     * Setzt den Empfänger der Überweisung.
+     *
+     * @param r Der zu setzende Empfänger der Überweisung.
+     */
+    void setRecipient(String r) {
+        recipient = r;
+    }
+
+    /**
+     * Berechnet den Betrag der Überweisung, der unverändert zurückgegeben wird.
+     *
+     * @return Der Betrag der Überweisung.
+     */
     @Override
     public double calculate() {
         return getAmount();
     }
 
-    /*public void printObject() {
-        System.out.println("Date: " + getDate());
-        System.out.println("Amount: " + getAmount());
-        System.out.println("Description: " + getDescription());
-        System.out.println("Sender: " + sender);
-        System.out.println("Recipient: " + recipient);
-    }*/
-
     /**
-     * Die Klasse soll die Methode toString() überschreiben.
+     * Gibt eine Zeichenfolge dar, die die Transaktionsinformationen einschließlich Sender und Empfänger enthält.
+     *
+     * @return Die Transaktionsinformationen als Zeichenfolge.
      */
     @Override
-    public String toString()
-    {
+    public String toString() {
         return super.toString() +
                 "Sender: " + getSender() + "\n" +
                 "Recipient: " + getRecipient();
     }
 
     /**
-     * Die Klasse soll die Methode equals() überschreiben.
+     * Überprüft, ob dieses Transfer-Objekt gleich einem anderen Objekt ist.
+     *
+     * @param other Das zu vergleichende Objekt.
+     * @return true, wenn die Objekte gleich sind, andernfalls false.
      */
     @Override
-    public boolean equals(Object other)
-    {
+    public boolean equals(Object other) {
         if (!(other instanceof Transfer otherTransfer)) return false;
 
         return (super.equals(otherTransfer) &&
