@@ -36,6 +36,7 @@ public class Transfer extends Transaction {
      *
      * @param a Der zu setzende Betrag der Überweisung.
      */
+    @Override
     public void setAmount(Double a) {
         if (a <= 0) {
             System.out.println("Negative Überweisung?");

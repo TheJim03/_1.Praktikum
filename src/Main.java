@@ -27,6 +27,7 @@ public class Main {
         System.out.println("Payment 1 ist gleich Payment 3: " + payment1.equals(payment3));
         System.out.println("Transfer 1 ist gleich Transfer 2: " + transfer1.equals(transfer2));
         System.out.println("Transfer 1 ist gleich Transfer 3: " + transfer1.equals(transfer3));
+        //mehr tests
 
         // Testen der toString() Methode
         System.out.println("\nZeichenkettenrepräsentationen:");

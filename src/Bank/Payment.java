@@ -120,6 +120,7 @@ public class Payment extends Transaction {
      * @param other Das zu vergleichende Objekt.
      * @return true, wenn die Objekte gleich sind, andernfalls false.
      */
+
     @Override
     public boolean equals(Object other) {
         if (!(other instanceof Payment otherPayment)) return false;
