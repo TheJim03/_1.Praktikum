@@ -1,6 +1,11 @@
 package Bank;
 
+
 public interface CalculateBill
 {
-     public double calculate();
+     /**
+      * Berechnet den Betrag
+      * @return double
+      */
+     double calculate();
 }

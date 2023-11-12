@@ -1,64 +1,104 @@
 package Bank;
 
 /**
- * Die Klasse Transaction soll als abstrakte Basisklasse für die Klassen Payment und Transfer dienen.
- * Sie soll die Attribute date, amount und description enthalten. Die Klasse soll einen Konstruktor
- * mit den Parametern date, amount und description besitzen. Die Klasse soll eine Methode toString()
- * besitzen, die die Attribute der Klasse als String zurückgibt. Die Klasse soll eine Methode
- * equals() besitzen, die zwei Objekte der Klasse vergleicht und true zurückgibt, wenn die Objekte
- * gleich sind, sonst false.
+ * Die abstrakte Klasse Transaction stellt grundlegende Parameter wie Datum, Betrag und Beschreibung bereit.
  */
-public abstract class Transaction implements CalculateBill
-{
-    /**
-     * Die Klasse soll die Attribute date, amount und description enthalten.
-     */
+public abstract class Transaction implements CalculateBill {
     protected String date;
-    protected double amount;
+    protected Double amount;
     protected String description;
 
     /**
-     * Die Klasse soll einen Konstruktor mit den Parametern date, amount und description besitzen.
+     * Erstellt ein Transaction-Objekt mit den angegebenen Parametern.
+     *
+     * @param date Das Datum der Transaktion.
+     * @param amount Der Betrag der Transaktion.
+     * @param description Eine Beschreibung der Transaktion.
      */
-    public Transaction(String date, double amount, String description)
-    {
+    public Transaction(String date, double amount, String description) {
         setDate(date);
         setAmount(amount);
         setDescription(description);
     }
 
-
-    public String getDate() {return date;}
-    public void setDate(String d) {date = d;}
-
-    public double getAmount() {return amount;}
-    public void setAmount(Double a) {amount = a;}
-
-    public String getDescription() {return description;}
-    public void setDescription(String d) {description = d;}
+    /**
+     * Gibt das Datum der Transaktion zurück.
+     *
+     * @return Das Datum der Transaktion.
+     */
+    public String getDate() {
+        return date;
+    }
 
     /**
-     * Die Klasse soll eine Methode toString() besitzen, die die Attribute der Klasse als String zurückgibt.
+     * Setzt das Datum der Transaktion.
+     *
+     * @param d Das zu setzende Datum.
+     */
+    public void setDate(String d) {
+        date = d;
+    }
+
+    /**
+     * Gibt den Betrag der Transaktion zurück.
+     *
+     * @return Der Betrag der Transaktion.
+     */
+    public Double getAmount() {
+        return amount;
+    }
+
+    /**
+     * Setzt den Betrag der Transaktion.
+     *
+     * @param a Der zu setzende Betrag.
+     */
+    public void setAmount(Double a) {
+        amount = a;
+    }
+
+    /**
+     * Gibt die Beschreibung der Transaktion zurück.
+     *
+     * @return Die Beschreibung der Transaktion.
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Setzt die Beschreibung der Transaktion.
+     *
+     * @param d Die zu setzende Beschreibung.
+     */
+    public void setDescription(String d) {
+        description = d;
+    }
+
+    /**
+     * Gibt eine Zeichenfolge dar, die die Transaktionsinformationen enthält.
+     *
+     * @return Die Transaktionsinformationen als Zeichenfolge.
      */
     @Override
-    public String toString()
-    {
+    public String toString() {
         return ("Date: " + getDate() + "\n" +
                 "Amount: " + calculate() + "\n" +
                 "Description: " + getDescription() + "\n");
     }
 
     /**
-     * Die Klasse soll eine Methode equals() besitzen, die zwei Objekte der Klasse vergleicht und true zurückgibt,
-     * wenn die Objekte gleich sind, sonst false.
+     * Überprüft, ob dieses Objekt gleich einem anderen Objekt ist.
+     *
+     * @param other Das zu vergleichende Objekt.
+     * @return true, wenn die Objekte gleich sind, andernfalls false.
      */
     @Override
-    public boolean equals(Object other)
-    {
-        if(!(other instanceof Transaction otherTransaction)) return false;
+    public boolean equals(Object other) {
+        if (!(other instanceof Transaction otherTransaction)) return false;
 
         return (getDate().equals(otherTransaction.getDate()) &&
-            getAmount() == otherTransaction.getAmount() &&
-            getDescription().equals(otherTransaction.getDescription()));
+                getAmount().equals(otherTransaction.getAmount()) &&
+                getDescription().equals(otherTransaction.getDescription()));
     }
 }
