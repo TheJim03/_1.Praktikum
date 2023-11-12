@@ -43,7 +43,7 @@ public class Transfer extends Transaction
      * Die Klasse soll die Methoden getSender() und getRecipient() besitzen.
      * setAmound() überschreiben. Die Methode soll den Betrag des Transfers setzen. Der Betrag darf nicht negativ sein.
      */
-   public void setAmount(Double a)
+   public void setAmount(double a)
     {
         if(a <= 0) System.out.println("Negative Transfer?");
         else super.setAmount(a);

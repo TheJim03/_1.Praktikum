@@ -14,7 +14,7 @@ public abstract class Transaction implements CalculateBill
      * Die Klasse soll die Attribute date, amount und description enthalten.
      */
     protected String date;
-    protected Double amount;
+    protected double amount;
     protected String description;
 
     /**
@@ -31,7 +31,7 @@ public abstract class Transaction implements CalculateBill
     public String getDate() {return date;}
     public void setDate(String d) {date = d;}
 
-    public Double getAmount() {return amount;}
+    public double getAmount() {return amount;}
     public void setAmount(Double a) {amount = a;}
 
     public String getDescription() {return description;}
@@ -58,7 +58,7 @@ public abstract class Transaction implements CalculateBill
         if(!(other instanceof Transaction otherTransaction)) return false;
 
         return (getDate().equals(otherTransaction.getDate()) &&
-            getAmount().equals(otherTransaction.getAmount()) &&
+            getAmount() == otherTransaction.getAmount() &&
             getDescription().equals(otherTransaction.getDescription()));
     }
 }
