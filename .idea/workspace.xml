@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889711c8-5adb-4fba-8be8-b83c6e7b0159" name="Changes" comment="lol">
+    <list default="true" id="889711c8-5adb-4fba-8be8-b83c6e7b0159" name="Changes" comment="First edit">
+      <change afterPath="$PROJECT_DIR$/src/bank/IncomingTransfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bank/OutgoingTransfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bank/PrivateBankAlt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/CalculateBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank/CalculateBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank/Transfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/CalculateBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/CalculateBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/PrivateBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/PrivateBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Transfer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "copyright",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -92,6 +98,8 @@
       <workItem from="1698619094099" duration="3413000" />
       <workItem from="1698672736277" duration="2336000" />
       <workItem from="1699359768130" duration="10000" />
+      <workItem from="1699824252899" duration="1307000" />
+      <workItem from="1699829627476" duration="5498000" />
     </task>
     <task id="LOCAL-00001" summary="First edit">
       <option name="closed" value="true" />

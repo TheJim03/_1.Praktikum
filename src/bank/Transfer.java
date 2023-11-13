@@ -1,4 +1,4 @@
-package Bank;
+package bank;
 
 /**
  * Die Klasse Transfer erbt Eigenschaften von Transaction und fügt zusätzliche Parameter für den Sender und den Empfänger hinzu.
@@ -37,7 +37,7 @@ public class Transfer extends Transaction {
      * @param a Der zu setzende Betrag der Überweisung.
      */
     @Override
-    public void setAmount(Double a) {
+    public void setAmount(double a) {
         if (a <= 0) {
             System.out.println("Negative Überweisung?");
         } else {

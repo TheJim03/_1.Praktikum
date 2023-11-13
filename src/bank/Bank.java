@@ -1,6 +1,6 @@
-package Bank;
+package bank;
 
-import Bank.exceptions.*;
+import bank.exceptions.*;
 
 import java.util.List;
 

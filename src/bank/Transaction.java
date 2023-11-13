@@ -1,11 +1,11 @@
-package Bank;
+package bank;
 
 /**
  * Die abstrakte Klasse Transaction stellt grundlegende Parameter wie Datum, Betrag und Beschreibung bereit.
  */
 public abstract class Transaction implements CalculateBill {
     protected String date;
-    protected Double amount;
+    protected double amount;
     protected String description;
 
     /**
@@ -44,7 +44,7 @@ public abstract class Transaction implements CalculateBill {
      *
      * @return Der Betrag der Transaktion.
      */
-    public Double getAmount() {
+    public double getAmount() {
         return amount;
     }
 
@@ -53,7 +53,7 @@ public abstract class Transaction implements CalculateBill {
      *
      * @param a Der zu setzende Betrag.
      */
-    public void setAmount(Double a) {
+    public void setAmount(double a) {
         amount = a;
     }
 
@@ -98,7 +98,7 @@ public abstract class Transaction implements CalculateBill {
         if (!(other instanceof Transaction otherTransaction)) return false;
 
         return (getDate().equals(otherTransaction.getDate()) &&
-                getAmount().equals(otherTransaction.getAmount()) &&
+                getAmount() == otherTransaction.getAmount() &&
                 getDescription().equals(otherTransaction.getDescription()));
     }
 }

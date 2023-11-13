@@ -1,4 +1,6 @@
-package Bank;
+package bank;
+
+
 
 /**
  * Die Klasse Payment erbt Eigenschaften von Transaction und fügt zusätzliche Parameter für eingehende und ausgehende Zinsen hinzu.
