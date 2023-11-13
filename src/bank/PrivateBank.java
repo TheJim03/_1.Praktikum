@@ -11,19 +11,22 @@ public class PrivateBank implements Bank{
     double outgoingInterest;
     Map<String,List <Transaction>> accountToTransactions = new HashMap<String,List <Transaction>>();
 
-    //Copy constructor
+
+    public PrivateBank(String name, double incomingInterest, double outgoingInterest) {
+        setName(name);
+        setIncomingInterest(incomingInterest);
+        setOutgoingInterest(outgoingInterest);
+    }
+
+
     public PrivateBank(PrivateBank bank){
         this.name=bank.name;
         this.incomingInterest=bank.incomingInterest;
         this.outgoingInterest=bank.outgoingInterest;
     }
 
-    //Constructor
-    public PrivateBank(String name, double incomingInterest, double outgoingInterest){
-        this.name=name;
-        this.incomingInterest=incomingInterest;
-        this.outgoingInterest=outgoingInterest;
-    }
+
+
     public String getName(){
         return name;
     }

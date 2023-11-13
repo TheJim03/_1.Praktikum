@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="889711c8-5adb-4fba-8be8-b83c6e7b0159" name="Changes" comment="First edit">
-      <change afterPath="$PROJECT_DIR$/src/bank/IncomingTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/OutgoingTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/PrivateBankAlt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/CalculateBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/CalculateBill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/PrivateBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/PrivateBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bank/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/PrivateBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/PrivateBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/PrivateBankAlt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/PrivateBankAlt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +92,7 @@
       <workItem from="1698672736277" duration="2336000" />
       <workItem from="1699359768130" duration="10000" />
       <workItem from="1699824252899" duration="1307000" />
-      <workItem from="1699829627476" duration="5498000" />
+      <workItem from="1699829627476" duration="8165000" />
     </task>
     <task id="LOCAL-00001" summary="First edit">
       <option name="closed" value="true" />
@@ -125,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698658866696</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First edit">
+      <option name="closed" value="true" />
+      <created>1699837732485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699837732485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,9 +144,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First edit" />
     <MESSAGE value="lol" />
-    <option name="LAST_COMMIT_MESSAGE" value="lol" />
+    <MESSAGE value="First edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

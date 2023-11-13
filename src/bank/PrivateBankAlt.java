@@ -13,7 +13,12 @@ public class PrivateBankAlt implements Bank{
     double outgoingInterest;
     Map<String,List <Transaction>> accountToTransactions = new HashMap<String,List <Transaction>>();
 
-    //Copy constructor
+    public PrivateBankAlt(String name, double incomingInterest, double outgoingInterest){
+        setName(name);
+        setIncomingInterest(incomingInterest);
+        setOutgoingInterest(outgoingInterest);
+    }
+
     public PrivateBankAlt(PrivateBankAlt bank){
         this.name=bank.name;
         this.incomingInterest=bank.incomingInterest;
@@ -21,11 +26,7 @@ public class PrivateBankAlt implements Bank{
     }
 
     //Constructor
-    public PrivateBankAlt(String name, double incomingInterest, double outgoingInterest){
-        this.name=name;
-        this.incomingInterest=incomingInterest;
-        this.outgoingInterest=outgoingInterest;
-    }
+
     public String getName(){
         return name;
     }
